@@ -22,7 +22,7 @@ export default function Projects() {
           <SectionHeader
             label="Portfolio"
             title="Progetti"
-            description="Infrastruttura, sistemi enterprise e sviluppo web. Progetti personali che gestisco in produzione, lavoro su ERP e AS/400, e siti per attività locali del territorio."
+            description="Infrastruttura che gestisco in produzione, progetti su ERP e AS/400 in azienda, e sviluppo web. Ogni scheda entra nel dettaglio tecnico: cosa c'era da risolvere e come l'ho risolto."
           />
 
           {/* Category Filter */}

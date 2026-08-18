@@ -143,62 +143,6 @@ export const projects = [
     ],
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js'],
     color: '#dc2626'
-  },
-  {
-    id: 6,
-    slug: 'madly',
-    title: 'Madly',
-    subtitle: 'Ristorante & Grill',
-    category: 'Ristorazione',
-    type: 'Sito Web Completo',
-    client: 'Madly Ristorante',
-    location: 'Quarto d\'Altino (VE)',
-    year: '2025',
-    status: 'In Sviluppo',
-    url: 'https://madly-website.onrender.com',
-    thumbnail: '/images/projects/madly-thumb.jpg',
-    description: 'Sito elegante per un ristorante specializzato in carni frollate dry-age e cocktail d\'autore a Quarto d\'Altino.',
-    challenge: 'Comunicare l\'unicità del ristorante: la cella di frollatura dry-age, l\'attenzione alla qualità della carne e l\'atmosfera giovane e innovativa.',
-    solution: 'Design raffinato con video background, palette scura che esalta le immagini del cibo, e sezioni dedicate alle specialità e al processo di frollatura.',
-    features: [
-      'Video hero cinematografico',
-      'Menu digitale interattivo',
-      'Sezione dry-age dedicata',
-      'Galleria food photography',
-      'Orari dinamici',
-      'Click-to-call',
-      'Design responsive'
-    ],
-    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js'],
-    color: '#b45309'
-  },
-  {
-    id: 7,
-    slug: 'boomerang-pub',
-    title: 'Boomerang Pub',
-    subtitle: 'Food & Drinks Since 2016',
-    category: 'Hospitality',
-    type: 'Sito Web Completo',
-    client: 'Boomerang Pub',
-    location: 'Quarto d\'Altino (VE)',
-    year: '2024',
-    status: 'In Sviluppo',
-    url: 'https://boomerang-p2fb.onrender.com',
-    thumbnail: '/images/projects/boomerang-thumb.jpg',
-    description: 'Sito web completo per un pub locale con focus su burger gourmet, cocktail artigianali e eventi serali.',
-    challenge: 'Presentare un menu molto ricco (food + drinks) in modo chiaro e appetitoso, comunicando anche l\'atmosfera del locale e gli eventi.',
-    solution: 'Layout pulito con navigazione tab per il menu, hero accattivante, sezione eventi dinamica e forte integrazione con WhatsApp per prenotazioni.',
-    features: [
-      'Menu completo Food & Drinks',
-      'Sistema tab navigazione',
-      'Sezione eventi',
-      'Galleria atmosfera',
-      'Prenotazione WhatsApp',
-      'Mappa integrata',
-      'Design responsive'
-    ],
-    technologies: ['HTML5', 'CSS3', 'JavaScript'],
-    color: '#eab308'
   }
 ]
 

@@ -16,6 +16,10 @@ import {
   HiOutlineBolt,
   HiOutlineWrenchScrewdriver,
   HiOutlineDocumentText,
+  HiOutlinePhone,
+  HiOutlineComputerDesktop,
+  HiOutlineShare,
+  HiOutlineChartBar,
   HiOutlineExclamationTriangle,
   HiOutlineSparkles
 } from 'react-icons/hi2'
@@ -34,7 +38,11 @@ const areaIcons = {
   shield: HiOutlineShieldCheck,
   bolt: HiOutlineBolt,
   code: HiOutlineCodeBracket,
-  document: HiOutlineDocumentText
+  document: HiOutlineDocumentText,
+  phone: HiOutlinePhone,
+  desktop: HiOutlineComputerDesktop,
+  network: HiOutlineShare,
+  chart: HiOutlineChartBar
 }
 
 export default function Experience() {
@@ -166,7 +174,7 @@ export default function Experience() {
           <SectionHeader
             label="Aree di responsabilità"
             title="Di cosa mi occupo"
-            description="Il ruolo copre sei ambiti che si intrecciano ogni giorno: dall'identità digitale all'hardware di magazzino."
+            description="Il ruolo copre dieci ambiti che si intrecciano ogni giorno: dall'identità digitale alla reperibilità notturna, dagli apparati di rete all'hardware di magazzino."
           />
 
           <div className="grid md:grid-cols-2 gap-6">

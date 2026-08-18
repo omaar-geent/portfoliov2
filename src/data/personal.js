@@ -152,6 +152,47 @@ export const vegaExperience = {
       ]
     },
     {
+      title: 'Reperibilità H24',
+      icon: 'phone',
+      items: [
+        'Turno di reperibilità dal lunedì alla domenica fuori dal normale orario di lavoro e per l\'intera giornata di sabato e domenica',
+        'Punto di contatto unico per le emergenze bloccanti su rete vendita, sedi del gruppo e CED',
+        'Valutazione dell\'urgenza, gestione diretta e coordinamento dei tecnici ingaggiati per la risoluzione',
+        'Intervento on-site quando l\'emergenza non è risolvibile da remoto'
+      ]
+    },
+    {
+      title: 'Virtualizzazione & Remote Desktop',
+      icon: 'desktop',
+      items: [
+        'Amministrazione e monitoraggio delle server farm RDP che ospitano desktop e sessioni virtuali per gli operatori',
+        'Gestione dei freeze applicativi: reset forzato delle sessioni bloccate e riavvio mirato dei servizi VDA',
+        'Ripristino dell\'operatività del singolo utente senza impattare l\'intero server',
+        'Deploy dei driver di stampa sulle macchine virtuali e gestione delle code di stampa di rete'
+      ]
+    },
+    {
+      title: 'Apparati di rete & diagnostica',
+      icon: 'network',
+      items: [
+        'Accesso amministrativo via SSH a router e switch core per diagnostica di basso livello e analisi dei log',
+        'Configurazione di rotte statiche sugli apparati di rete',
+        'Configurazione e troubleshooting dei record DNS',
+        'IP scanning per la mappatura degli host e la risoluzione dei conflitti di indirizzo',
+        'Analisi delle metriche di rete per individuare collo di bottiglia e cali di performance'
+      ]
+    },
+    {
+      title: 'Server applicativi & batch',
+      icon: 'chart',
+      items: [
+        'Amministrazione del server SAP BusinessObjects: anomalie di accesso, uptime, analisi log e riavvio dei servizi di reportistica',
+        'Configurazione e monitoraggio dei flussi di elaborazione dati notturni',
+        'Task Scheduler di Windows e piattaforme di automazione aziendale',
+        'Intervento su job bloccati, processi appesi o in timeout per garantire il completamento delle routine notturne'
+      ]
+    },
+    {
       title: 'Business continuity & operations',
       icon: 'bolt',
       items: [
@@ -189,7 +230,8 @@ export const vegaExperience = {
     'First response su phishing e Business Email Compromise',
     'Business continuity: ripristino dei servizi di base IBM i',
     'Automazione con Python e macro VBA per l\'area logistica',
-    'Vendor management tecnico e presidio SLA'
+    'Vendor management tecnico e presidio SLA',
+    'Reperibilità H24 su turno settimanale'
   ],
   technologies: [
     'Active Directory',
@@ -203,6 +245,8 @@ export const vegaExperience = {
     'Python',
     'VBA',
     'Windows Server',
+    'SAP BusinessObjects',
+    'RDP / RDS',
     'nmap'
   ]
 }
