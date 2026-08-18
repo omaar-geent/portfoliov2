@@ -21,8 +21,8 @@ export default function Projects() {
         <div className="container-custom">
           <SectionHeader
             label="Portfolio"
-            title="I Miei Progetti"
-            description="Una raccolta dei siti web che ho creato per attività locali. Ogni progetto è un pezzo unico, pensato per le esigenze specifiche del cliente."
+            title="Progetti"
+            description="Infrastruttura, sistemi enterprise e sviluppo web. Progetti personali che gestisco in produzione, lavoro su ERP e AS/400, e siti per attività locali del territorio."
           />
 
           {/* Category Filter */}

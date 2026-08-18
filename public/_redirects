@@ -1,0 +1,3 @@
+# SPA fallback: serve index.html per tutte le rotte gestite da react-router.
+# Senza questa regola i link diretti (es. /projects/homelab) restituiscono 404.
+/*    /index.html   200

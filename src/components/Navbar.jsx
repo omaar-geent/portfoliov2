@@ -6,8 +6,9 @@ import { useTheme } from '../context/ThemeContext'
 
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Luxottica', path: '/experience' },
+  { name: 'Chi sono', path: '/about' },
+  { name: 'Cosa ho fatto', path: '/experience' },
+  { name: 'Homelab', path: '/homelab' },
   { name: 'Progetti', path: '/projects' },
   { name: 'Servizi', path: '/services' },
   { name: 'Contatti', path: '/contact' }

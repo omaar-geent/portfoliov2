@@ -11,7 +11,7 @@ export default function ProjectCard({ project, index = 0 }) {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className="group"
     >
-      <Link to={`/projects/${project.slug}`} className="block">
+      <Link to={project.internalLink || `/projects/${project.slug}`} className="block">
         <div className="card overflow-hidden glow">
           {/* Image Container */}
           <div className="relative aspect-project overflow-hidden bg-light-200 dark:bg-dark-700">
