@@ -6,72 +6,66 @@ export const contactInfo = {
   email: 'omarmarco04@gmail.com',
   phone: '+39 389 019 3669',
   whatsapp: '393890193669',
-  location: 'Quarto d\'Altino (VE), Italia',
+  location: 'Mogliano Veneto (TV), Italia',
   github: 'https://github.com/omaar-geent',
   linkedin: 'https://www.linkedin.com/in/omar-gentilin-36472132b/'
 }
 
 // Bio
 export const bio = {
-  short: 'Full Stack Developer & Web Designer',
-  medium: 'Creo esperienze digitali per business locali e soluzioni enterprise.',
-  full: `Ho 21 anni e una passione che è diventata professione: trasformare idee in codice. 
-Diplomato all'ITIS Volterra di San Donà di Piave in Informatica, attualmente studio 
-Informatica all'Università Ca' Foscari di Venezia.
+  short: 'IT System Administrator & Developer',
+  medium: 'Amministro infrastrutture ibride e le automatizzo con il codice.',
+  full: `Lavoro come IT System Administrator & Support Specialist in Gruppo Vega, dove mi occupo di Active Directory e Microsoft 365, reti e VPN, sicurezza e permessi su ERP AS/400 in un contesto logistico.
 
-Da un lato creo siti web per attività locali - ristoranti, pub, palestre - con un approccio 
-che unisce design moderno e funzionalità concrete. Dall'altro, lavoro come sviluppatore 
-SAP ABAP, costruendo soluzioni enterprise per aziende strutturate.
+Fuori dall'ufficio progetto e gestisco un homelab multi-nodo attivo H24 — Proxmox, TrueNAS, ZFS, Tailscale, Docker — e sviluppo applicazioni in Python e TypeScript per risolvere problemi concreti.
 
-Questa doppia anima mi permette di parlare sia il linguaggio delle piccole realtà che 
-vogliono farsi notare online, sia quello delle grandi aziende che hanno bisogno di 
-sistemi solidi e performanti.`
+Mi piace il punto in cui il sistema e il codice si incontrano: automatizzare quello che oggi si fa a mano, e documentarlo perché resti.`
 }
 
 // Skills divise per categoria
 export const skills = {
   frontend: {
-    title: 'Frontend',
-    description: 'Interfacce moderne e responsive',
+    title: 'Infrastructure & Systems',
+    description: 'Sistemi, virtualizzazione e storage',
     items: [
-      { name: 'HTML5', level: 95, icon: 'html5' },
-      { name: 'CSS3', level: 90, icon: 'css3' },
-      { name: 'JavaScript', level: 85, icon: 'javascript' },
-      { name: 'React', level: 75, icon: 'react' },
-      { name: 'Tailwind CSS', level: 80, icon: 'tailwind' }
+      { name: 'Windows Server / Active Directory', level: 85, icon: 'server' },
+      { name: 'Microsoft 365 / Entra ID', level: 90, icon: 'cloud' },
+      { name: 'Proxmox VE / LXC / KVM', level: 80, icon: 'proxmox' },
+      { name: 'TrueNAS SCALE / ZFS', level: 80, icon: 'storage' },
+      { name: 'Linux (Debian/Ubuntu/Kali)', level: 78, icon: 'linux' }
     ]
   },
   backend: {
-    title: 'Backend',
-    description: 'Server e logica applicativa',
+    title: 'Networking & Security',
+    description: 'Reti, VPN, firewall e cybersecurity',
     items: [
-      { name: 'Node.js', level: 80, icon: 'nodejs' },
-      { name: 'PHP', level: 70, icon: 'php' },
-      { name: 'Python', level: 75, icon: 'python' },
-      { name: 'Java', level: 70, icon: 'java' },
-      { name: 'SQL', level: 85, icon: 'database' }
+      { name: 'TCP/IP · DNS · DHCP · VLAN', level: 85, icon: 'network' },
+      { name: 'VPN (WatchGuard / Tailscale)', level: 82, icon: 'vpn' },
+      { name: 'Firewall & log analysis', level: 78, icon: 'firewall' },
+      { name: 'Incident Response (BEC/phishing)', level: 80, icon: 'security' },
+      { name: 'Pi-hole · nmap · Vaultwarden', level: 78, icon: 'tools' }
     ]
   },
   enterprise: {
-    title: 'Enterprise',
-    description: 'Soluzioni aziendali SAP',
+    title: 'Development',
+    description: 'Backend, frontend e automazione',
     items: [
-      { name: 'SAP ABAP', level: 85, icon: 'sap' },
-      { name: 'ALV Grid', level: 90, icon: 'table' },
-      { name: 'Module Pool', level: 80, icon: 'module' },
-      { name: 'RFC/BAPI', level: 75, icon: 'api' }
+      { name: 'Python (FastAPI · Celery · SQLAlchemy)', level: 80, icon: 'python' },
+      { name: 'TypeScript / Next.js / React', level: 75, icon: 'react' },
+      { name: 'SQL · PostgreSQL · Redis', level: 80, icon: 'database' },
+      { name: 'SAP ABAP', level: 75, icon: 'sap' },
+      { name: 'Bash · VBA · PHP', level: 70, icon: 'code' }
     ]
   },
   tools: {
-    title: 'Tools & DevOps',
-    description: 'Strumenti di sviluppo',
+    title: 'DevOps & Containers',
+    description: 'Container, CI/CD e automazione',
     items: [
-      { name: 'Git', level: 85, icon: 'git' },
-      { name: 'GitHub', level: 90, icon: 'github' },
-      { name: 'VS Code', level: 95, icon: 'vscode' },
-      { name: 'Render', level: 85, icon: 'cloud' },
-      { name: 'Netlify', level: 85, icon: 'cloud' },
-      { name: 'Linux', level: 75, icon: 'linux' }
+      { name: 'Docker / Docker Compose', level: 82, icon: 'docker' },
+      { name: 'Git / GitHub / CI-CD Netlify', level: 85, icon: 'git' },
+      { name: 'nginx · Redis · MinIO', level: 75, icon: 'server' },
+      { name: 'IBM AS/400 (IBM i)', level: 72, icon: 'ibm' },
+      { name: 'Uptime Kuma · launchd / systemd', level: 78, icon: 'monitor' }
     ]
   }
 }
@@ -79,49 +73,86 @@ export const skills = {
 // Timeline formazione/esperienza
 export const timeline = [
   {
-    year: '2025 - Oggi',
+    year: '2026 – Oggi',
+    title: 'VEGA Soc. Coop. (Gruppo Vega)',
+    subtitle: 'IT System Administrator & Support Specialist',
+    description: 'Service Desk, Area Sistemi Informativi. AD/M365 ibrido, WatchGuard VPN, cybersecurity first response (BEC/phishing), IBM AS/400 RBAC, automazione Python/VBA, asset management.',
+    type: 'work',
+    highlight: true
+  },
+  {
+    year: '2025 – Oggi',
     title: 'Università Ca\' Foscari',
     subtitle: 'Laurea in Informatica',
     description: 'Approfondimento teorico e pratico in algoritmi, programmazione e sistemi.',
     type: 'education'
   },
   {
-    year: 'Giu 2025 - Dic 2025',
-    title: 'EssilorLuxottica',
-    subtitle: 'SAP ABAP Developer (Tirocinio)',
-    description: '6 mesi di sviluppo ABAP in ambiente enterprise. Creazione tool custom, enhancement programmi esistenti, gestione ciclo completo DEV → TEST → QUALITY → PROD.',
-    type: 'work',
-    highlight: true
-  },
-  {
-    year: '2025 - Oggi',
-    title: 'Web Designer Freelance',
-    subtitle: 'Siti per business locali',
-    description: 'Creazione di siti web professionali per ristoranti, pub e attività sportive nel Veneto.',
+    year: 'Giu 2025 – Dic 2025',
+    title: 'Cover System S.r.l.',
+    subtitle: 'SAP ABAP Developer — Stage (progetti Luxottica)',
+    description: '6 mesi di sviluppo ABAP su progetti Luxottica: report ALV, function module, module pool. Ciclo completo DEV → TEST → QUALITY → PROD, documentazione SOX.',
     type: 'work'
   },
   {
-    year: '2019 - 2024',
-    title: 'ITIS Volterra',
-    subtitle: 'Diploma in Informatica',
-    description: 'San Donà di Piave. Fondamenti di programmazione, database, reti e sistemi.',
+    year: '2024 – 2025',
+    title: 'Web Developer Freelance',
+    subtitle: 'Siti per business locali',
+    description: 'Siti web per ristoranti, pub e attività sportive nel Veneto. HTML, CSS, JavaScript, Node.js, PHP.',
+    type: 'work'
+  },
+  {
+    year: '2019 – 2024',
+    title: 'ITTS Vito Volterra',
+    subtitle: 'Diploma in Informatica e Telecomunicazioni',
+    description: 'San Donà di Piave (VE). Fondamenti di programmazione, database, reti e sistemi.',
     type: 'education'
   }
 ]
 
-// Esperienza Luxottica dettagliata
+// Esperienza Gruppo Vega (ruolo attuale)
+export const vegaExperience = {
+  company: 'VEGA Soc. Coop. (Gruppo Vega)',
+  period: '2026 – Presente',
+  role: 'IT System Administrator & Support Specialist',
+  location: 'Mogliano Veneto (TV), Italia',
+  description: `Ruolo ibrido nel Service Desk dell'Area Sistemi Informativi in un contesto Logistica e GDO. Gestione dell'infrastruttura IT end-to-end: da Active Directory e Microsoft 365 alla sicurezza perimetrale, dall'ERP IBM AS/400 all'hardware di magazzino.`,
+  highlights: [
+    'Gestione ciclo di vita utenti (onboarding/offboarding) in ambiente ibrido AD / Microsoft 365',
+    'Risoluzione anomalie di sincronizzazione AD ↔ cloud e gestione alias .onmicrosoft.com',
+    'Troubleshooting VPN WatchGuard: conflitti DNS (Error 12007) e blocchi Geo-IP',
+    'Cybersecurity first response: identificazione e contenimento di BEC e SharePoint phishing',
+    'Gestione sicurezza e permessi IBM AS/400 in logica RBAC (Tabella 0017, menu utente)',
+    'Debugging macro VBA in Excel e refactoring script Python per calcoli logistici',
+    'RMA hardware, stampanti termiche industriali (Printronix, TSC), monitoraggio PDU Vertiv'
+  ],
+  technologies: [
+    'Active Directory',
+    'Microsoft 365',
+    'Exchange Admin Center',
+    'Entra ID (Azure AD)',
+    'WatchGuard Mobile VPN',
+    'IBM AS/400 (IBM i)',
+    'Python',
+    'VBA',
+    'Windows Server',
+    'nmap'
+  ]
+}
+
+// Esperienza Cover System / Luxottica dettagliata
 export const luxotticaExperience = {
-  company: 'EssilorLuxottica',
+  company: 'Cover System S.r.l. — progetti Luxottica',
   logo: '/images/luxottica-logo.png',
   period: 'Giugno 2025 - Dicembre 2025',
   duration: '6 mesi',
   role: 'SAP ABAP Developer (Tirocinio Curriculare)',
   location: 'Agordo (BL), Italia',
-  description: `Durante il tirocinio ho lavorato nel team IT Wholesale and Operations Systems, 
-sviluppando soluzioni ABAP custom per ottimizzare i processi aziendali. Ho gestito l'intero 
-ciclo di sviluppo: dall'analisi dei requisiti alla documentazione SOX, dal coding al testing, 
+  description: `Durante il tirocinio ho lavorato nel team IT Wholesale and Operations Systems,
+sviluppando soluzioni ABAP custom per ottimizzare i processi aziendali. Ho gestito l'intero
+ciclo di sviluppo: dall'analisi dei requisiti alla documentazione SOX, dal coding al testing,
 fino al deploy in produzione attraverso il sistema di trasporti SAP (DEV → TEST → QUALITY → PROD).`,
-  
+
   highlights: [
     'Sviluppo tool ABAP da zero con architettura modulare',
     'Enhancement di programmi esistenti con nuove funzionalità',
@@ -129,7 +160,7 @@ fino al deploy in produzione attraverso il sistema di trasporti SAP (DEV → TES
     'Testing e validazione in ambiente multi-sistema',
     'Collaborazione con team funzionale e utenti finali'
   ],
-  
+
   technologies: [
     'SAP ABAP',
     'ALV Grid/List',
@@ -140,7 +171,7 @@ fino al deploy in produzione attraverso il sistema di trasporti SAP (DEV → TES
     'SMW0 Templates',
     'Transport System'
   ],
-  
+
   projects: [
     {
       id: 'spaku-tool',
@@ -160,7 +191,7 @@ fino al deploy in produzione attraverso il sistema di trasporti SAP (DEV → TES
       objects: [
         'Report: ZSD_SET_SPAKU_TOOL',
         'Include: ZSD_SET_SPAKU_TOOL_TOP',
-        'Include: ZSD_SET_SPAKU_TOOL_SEL', 
+        'Include: ZSD_SET_SPAKU_TOOL_SEL',
         'Include: ZSD_SET_SPAKU_TOOL_FORM',
         'Transaction: ZSD_SET_SPAKU'
       ],
@@ -171,7 +202,7 @@ SELECT a~vkorg a~vtweg a~spart a~spaku AS spaku_tvta
   FROM tvta AS a
   INNER JOIN tvkos AS b
     ON a~vkorg = b~vkorg
-   AND a~vtweg = b~vtweg  
+   AND a~vtweg = b~vtweg
    AND a~spart = b~spart
   INTO TABLE @gt_mismatch
   WHERE a~spaku <> b~spaku.
@@ -218,7 +249,7 @@ CALL FUNCTION 'DOWNLOAD_WEB_OBJECT'
     OTHERS      = 1.
 
 * Messaggio finale con riepilogo
-CONCATENATE 'Inseriti:' gv_ins_ok 
+CONCATENATE 'Inseriti:' gv_ins_ok
             '| Esistenti:' gv_exist
             '| Errori:' gv_err
   INTO gv_msg_ins SEPARATED BY space.`

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { 
+import {
   HiOutlineBuildingOffice2,
   HiOutlineCalendar,
   HiOutlineMapPin,
@@ -13,7 +13,7 @@ import {
 } from 'react-icons/hi2'
 import PageTransition from '../components/PageTransition'
 import SectionHeader from '../components/SectionHeader'
-import { luxotticaExperience } from '../data/personal'
+import { vegaExperience, luxotticaExperience } from '../data/personal'
 
 export default function Experience() {
   const [expandedProject, setExpandedProject] = useState(null)
@@ -26,7 +26,6 @@ export default function Experience() {
     <PageTransition>
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 relative overflow-hidden">
-        {/* Background */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
@@ -34,10 +33,168 @@ export default function Experience() {
 
         <div className="container-custom">
           <div className="max-w-4xl">
-            {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+              className="mb-6"
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
+                <HiOutlineBuildingOffice2 className="w-5 h-5 text-accent" />
+                <span className="text-sm font-medium text-accent">
+                  Esperienze Professionali
+                </span>
+              </span>
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-dark-900 dark:text-white mb-4"
+            >
+              Il mio percorso
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="text-lg text-dark-600 dark:text-light-300"
+            >
+              Dal development enterprise alla sistemistica ibrida, passando per progetti personali e homelab.
+            </motion.p>
+          </div>
+        </div>
+      </section>
+
+      {/* Vega — Ruolo Attuale */}
+      <section className="py-16 md:py-20">
+        <div className="container-custom">
+          <div className="max-w-4xl">
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mb-6"
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
+                <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+                <span className="text-sm font-medium text-accent">Posizione Attuale</span>
+              </span>
+            </motion.div>
+
+            {/* Company + Role */}
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-3xl md:text-4xl font-display font-bold text-dark-900 dark:text-white mb-2"
+            >
+              {vegaExperience.company}
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.15 }}
+              className="text-xl text-accent mb-4"
+            >
+              {vegaExperience.role}
+            </motion.p>
+
+            {/* Meta */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="flex flex-wrap gap-6 mb-8"
+            >
+              <div className="flex items-center gap-2 text-dark-600 dark:text-light-300">
+                <HiOutlineCalendar className="w-5 h-5 text-accent" />
+                <span>{vegaExperience.period}</span>
+              </div>
+              <div className="flex items-center gap-2 text-dark-600 dark:text-light-300">
+                <HiOutlineMapPin className="w-5 h-5 text-accent" />
+                <span>{vegaExperience.location}</span>
+              </div>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.25 }}
+              className="text-lg text-dark-600 dark:text-light-300 mb-10"
+            >
+              {vegaExperience.description}
+            </motion.p>
+
+            {/* Highlights */}
+            <div className="grid md:grid-cols-2 gap-4 mb-10">
+              {vegaExperience.highlights.map((highlight, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.07 }}
+                  className="flex items-start gap-3 p-4 bg-white dark:bg-dark-700 rounded-xl border border-light-200 dark:border-dark-600"
+                >
+                  <HiOutlineCheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
+                  <span className="text-dark-700 dark:text-light-200 text-sm">{highlight}</span>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Technologies */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-lg font-display font-semibold text-dark-900 dark:text-white mb-4">
+                Tecnologie & Strumenti
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {vegaExperience.technologies.map((tech, index) => (
+                  <motion.span
+                    key={tech}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.05 }}
+                    className="tech-badge"
+                  >
+                    {tech}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="container-custom">
+        <div className="border-t border-light-300 dark:border-dark-600" />
+      </div>
+
+      {/* Cover System / Luxottica — Esperienza Precedente */}
+      <section className="py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container-custom">
+          <div className="max-w-4xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               className="mb-6"
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20">
@@ -48,50 +205,50 @@ export default function Experience() {
               </span>
             </motion.div>
 
-            {/* Title */}
-            <motion.h1
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-dark-900 dark:text-white mb-4"
+              className="text-3xl md:text-4xl font-display font-bold text-dark-900 dark:text-white mb-2"
             >
               {luxotticaExperience.company}
-            </motion.h1>
+            </motion.h2>
 
-            {/* Role */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.15 }}
-              className="text-xl md:text-2xl text-accent mb-6"
+              className="text-xl text-blue-600 dark:text-blue-400 mb-4"
             >
               {luxotticaExperience.role}
             </motion.p>
 
-            {/* Meta info */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               className="flex flex-wrap gap-6 mb-8"
             >
               <div className="flex items-center gap-2 text-dark-600 dark:text-light-300">
-                <HiOutlineCalendar className="w-5 h-5 text-accent" />
+                <HiOutlineCalendar className="w-5 h-5 text-blue-500" />
                 <span>{luxotticaExperience.period}</span>
-                <span className="px-2 py-0.5 bg-accent/10 text-accent text-sm rounded-full ml-1">
+                <span className="px-2 py-0.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 text-sm rounded-full ml-1">
                   {luxotticaExperience.duration}
                 </span>
               </div>
               <div className="flex items-center gap-2 text-dark-600 dark:text-light-300">
-                <HiOutlineMapPin className="w-5 h-5 text-accent" />
+                <HiOutlineMapPin className="w-5 h-5 text-blue-500" />
                 <span>{luxotticaExperience.location}</span>
               </div>
             </motion.div>
 
-            {/* Description */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.25 }}
               className="text-lg text-dark-600 dark:text-light-300 whitespace-pre-line"
             >
@@ -101,7 +258,7 @@ export default function Experience() {
         </div>
       </section>
 
-      {/* Highlights Section */}
+      {/* Highlights Luxottica */}
       <section className="py-16 bg-light-100 dark:bg-dark-800">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -114,7 +271,7 @@ export default function Experience() {
                 transition={{ delay: index * 0.1 }}
                 className="flex items-start gap-3 p-4 bg-white dark:bg-dark-700 rounded-xl"
               >
-                <HiOutlineCheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
+                <HiOutlineCheckCircle className="w-6 h-6 text-blue-500 flex-shrink-0 mt-0.5" />
                 <span className="text-dark-700 dark:text-light-200">{highlight}</span>
               </motion.div>
             ))}
@@ -122,7 +279,7 @@ export default function Experience() {
         </div>
       </section>
 
-      {/* Technologies */}
+      {/* Technologies Luxottica */}
       <section className="py-16">
         <div className="container-custom">
           <motion.h2
@@ -154,7 +311,7 @@ export default function Experience() {
       <section className="py-16 md:py-24 bg-light-100 dark:bg-dark-800">
         <div className="container-custom">
           <SectionHeader
-            label="Progetti"
+            label="Progetti SAP"
             title="Cosa ho sviluppato"
             description="I principali progetti su cui ho lavorato durante il tirocinio, con documentazione SOX completa."
           />
@@ -169,7 +326,6 @@ export default function Experience() {
                 transition={{ delay: index * 0.1 }}
                 className="card overflow-hidden"
               >
-                {/* Project Header - Always visible */}
                 <button
                   onClick={() => toggleProject(project.id)}
                   className="w-full p-6 md:p-8 text-left flex items-start justify-between gap-4 hover:bg-light-50 dark:hover:bg-dark-700/50 transition-colors"
@@ -177,8 +333,8 @@ export default function Experience() {
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-2">
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        project.type.includes('Zero') 
-                          ? 'bg-accent/10 text-accent' 
+                        project.type.includes('Zero')
+                          ? 'bg-accent/10 text-accent'
                           : 'bg-blue-500/10 text-blue-600 dark:text-blue-400'
                       }`}>
                         {project.type}
@@ -187,18 +343,18 @@ export default function Experience() {
                         {project.ticket}
                       </span>
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        project.riskLevel === 'Normal' 
-                          ? 'bg-yellow-500/10 text-yellow-600' 
+                        project.riskLevel === 'Normal'
+                          ? 'bg-yellow-500/10 text-yellow-600'
                           : 'bg-green-500/10 text-green-600'
                       }`}>
                         SOX: {project.riskLevel}
                       </span>
                     </div>
-                    
+
                     <h3 className="text-xl md:text-2xl font-display font-bold text-dark-900 dark:text-white mb-2">
                       {project.name}
                     </h3>
-                    
+
                     <p className="text-dark-600 dark:text-light-300">
                       {project.description}
                     </p>
@@ -212,7 +368,6 @@ export default function Experience() {
                   </motion.div>
                 </button>
 
-                {/* Expandable Content */}
                 <AnimatePresence>
                   {expandedProject === project.id && (
                     <motion.div
@@ -224,7 +379,6 @@ export default function Experience() {
                     >
                       <div className="px-6 md:px-8 pb-8 pt-2 border-t border-light-200 dark:border-dark-600">
                         <div className="grid md:grid-cols-2 gap-8">
-                          {/* Features */}
                           <div>
                             <h4 className="flex items-center gap-2 text-lg font-semibold text-dark-900 dark:text-white mb-4">
                               <HiOutlineCheckCircle className="w-5 h-5 text-accent" />
@@ -240,7 +394,6 @@ export default function Experience() {
                             </ul>
                           </div>
 
-                          {/* Objects */}
                           <div>
                             <h4 className="flex items-center gap-2 text-lg font-semibold text-dark-900 dark:text-white mb-4">
                               <HiOutlineDocument className="w-5 h-5 text-accent" />
@@ -256,7 +409,6 @@ export default function Experience() {
                           </div>
                         </div>
 
-                        {/* Code Snippet */}
                         <div className="mt-8">
                           <h4 className="flex items-center gap-2 text-lg font-semibold text-dark-900 dark:text-white mb-4">
                             <HiOutlineCodeBracket className="w-5 h-5 text-accent" />
@@ -296,19 +448,19 @@ export default function Experience() {
               </h2>
               <div className="text-left space-y-4 text-dark-600 dark:text-light-300">
                 <p>
-                  Lavorare in un'azienda come EssilorLuxottica mi ha insegnato che scrivere codice 
-                  è solo una parte del lavoro. Ho imparato l'importanza della <strong className="text-dark-900 dark:text-white">documentazione</strong> (SOX compliance), 
-                  del <strong className="text-dark-900 dark:text-white">testing rigoroso</strong> prima di ogni rilascio, e della 
+                  Lavorare in un'azienda come EssilorLuxottica mi ha insegnato che scrivere codice
+                  è solo una parte del lavoro. Ho imparato l'importanza della <strong className="text-dark-900 dark:text-white">documentazione</strong> (SOX compliance),
+                  del <strong className="text-dark-900 dark:text-white">testing rigoroso</strong> prima di ogni rilascio, e della
                   <strong className="text-dark-900 dark:text-white"> comunicazione</strong> con il team funzionale.
                 </p>
                 <p>
-                  Ho gestito l'intero ciclo di vita del software: dall'analisi dei requisiti con gli utenti, 
-                  passando per lo sviluppo e i test, fino al deploy in produzione attraverso il sistema di 
+                  Ho gestito l'intero ciclo di vita del software: dall'analisi dei requisiti con gli utenti,
+                  passando per lo sviluppo e i test, fino al deploy in produzione attraverso il sistema di
                   trasporti SAP (DEV → TEST → QUALITY → PROD).
                 </p>
                 <p>
-                  Ogni modifica doveva essere tracciata, ogni rilascio approvato. Questo mi ha dato una 
-                  visione realistica di come funziona lo sviluppo software in contesti enterprise dove 
+                  Ogni modifica doveva essere tracciata, ogni rilascio approvato. Questo mi ha dato una
+                  visione realistica di come funziona lo sviluppo software in contesti enterprise dove
                   l'affidabilità non è opzionale.
                 </p>
               </div>

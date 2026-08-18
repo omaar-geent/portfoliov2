@@ -40,7 +40,7 @@ export default function About() {
                   transition={{ duration: 3, repeat: Infinity }}
                   className="absolute -top-4 -right-4 w-20 h-20 bg-accent rounded-2xl flex items-center justify-center shadow-lg"
                 >
-                  <span className="text-3xl font-display font-bold text-dark-900">21</span>
+                  <span className="text-3xl font-display font-bold text-dark-900">22</span>
                 </motion.div>
 
                 <motion.div
@@ -121,7 +121,7 @@ export default function About() {
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
-                  <span className="text-2xl">🎨</span>
+                  <span className="text-2xl">🖥️</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-semibold text-dark-900 dark:text-white">
@@ -152,7 +152,7 @@ export default function About() {
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
-                  <span className="text-2xl">⚙️</span>
+                  <span className="text-2xl">🔒</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-semibold text-dark-900 dark:text-white">
@@ -183,7 +183,7 @@ export default function About() {
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
-                  <span className="text-2xl">🏢</span>
+                  <span className="text-2xl">💻</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-semibold text-dark-900 dark:text-white">
@@ -214,7 +214,7 @@ export default function About() {
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
-                  <span className="text-2xl">🛠️</span>
+                  <span className="text-2xl">🐳</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-semibold text-dark-900 dark:text-white">

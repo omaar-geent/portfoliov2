@@ -32,7 +32,7 @@ export const projects = [
       'Design responsive'
     ],
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js'],
-    color: '#dc2626' // Rosso combattimento
+    color: '#dc2626'
   },
   {
     id: 2,
@@ -66,7 +66,7 @@ export const projects = [
       'Design responsive'
     ],
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js'],
-    color: '#b45309' // Ambra/carne
+    color: '#b45309'
   },
   {
     id: 3,
@@ -99,7 +99,59 @@ export const projects = [
       'Design responsive'
     ],
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
-    color: '#eab308' // Giallo/birra
+    color: '#eab308'
+  },
+  {
+    id: 4,
+    slug: 'homenet-inventory',
+    title: 'HomeNet-Inventory',
+    subtitle: 'Network Monitoring & Inventory',
+    category: 'Infrastructure',
+    type: 'Progetto Personale',
+    year: '2025',
+    status: 'Attivo',
+    thumbnail: null,
+    description: 'Piattaforma locale per il monitoraggio della rete domestica, sviluppata end-to-end in Python. Scanner nmap, risk scoring, dashboard Flask, alert Telegram, bot Wake-on-LAN.',
+    challenge: 'Avere visibilità completa su tutti i dispositivi della rete domestica, rilevare cambiamenti e anomalie in real-time senza dipendenze cloud.',
+    solution: 'Sistema modulare con scanner nmap, change detection per stati (NEW/MISSING/PORTS_CHANGED), risk scoring, dashboard Flask e bot Telegram per il controllo remoto.',
+    features: [
+      'Host discovery e port scan con nmap',
+      'OS fingerprinting e classificazione dispositivi',
+      'Change detection con risk scoring',
+      'Alert multi-severità via Telegram',
+      'Dashboard Flask (stato rete, storico, watchlist)',
+      'Bot Telegram con Wake-on-LAN e integrazione RustDesk',
+      'Database SQLite con storico completo',
+      'Orchestrazione launchd su macOS'
+    ],
+    technologies: ['Python', 'nmap', 'Flask', 'SQLite', 'Telegram Bot API', 'launchd'],
+    color: '#0ea5e9'
+  },
+  {
+    id: 5,
+    slug: 'omar-work-control',
+    title: 'Omar Work Control',
+    subtitle: 'Web App Full-Stack',
+    category: 'Full-Stack',
+    type: 'Progetto Personale',
+    year: '2025',
+    status: 'Attivo',
+    thumbnail: null,
+    description: 'Web application full-stack per monitorare il proprio profilo contrattuale, retributivo e previdenziale. Backend FastAPI, frontend Next.js, stack Docker a 7 servizi.',
+    challenge: 'Avere un cruscotto unico per cedolini, contributi previdenziali, ferie e permessi, con alert automatici su scadenze.',
+    solution: 'Architettura full-stack con FastAPI, schema a 19 tabelle, parser PDF dei cedolini, task asincroni Celery, dashboard KPI in Next.js, tutto containerizzato.',
+    features: [
+      'Backend FastAPI con JWT auth e schema 19 tabelle',
+      'Parser PDF cedolini automatico',
+      'Task asincroni Celery + Celery Beat su Redis',
+      'Dashboard KPI con tema light/dark',
+      'Wizard onboarding',
+      'Stack Docker Compose a 7 servizi',
+      'PostgreSQL 16 + Redis 7 + MinIO (S3)',
+      'nginx reverse proxy + deploy Oracle Cloud'
+    ],
+    technologies: ['Python', 'FastAPI', 'Next.js', 'TypeScript', 'PostgreSQL', 'Redis', 'Docker', 'Celery', 'Tailwind CSS'],
+    color: '#8b5cf6'
   }
 ]
 

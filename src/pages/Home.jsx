@@ -162,7 +162,7 @@ export default function Home() {
                   transition={{ delay: 0.8 }}
                   className="absolute top-10 -left-8 glass px-3 py-2 rounded-lg shadow-lg"
                 >
-                  <span className="text-sm font-medium text-dark-700 dark:text-light-200">React.js</span>
+                  <span className="text-sm font-medium text-dark-700 dark:text-light-200">Python · FastAPI</span>
                 </motion.div>
 
                 <motion.div
@@ -171,7 +171,7 @@ export default function Home() {
                   transition={{ delay: 1 }}
                   className="absolute top-1/3 -right-6 glass px-3 py-2 rounded-lg shadow-lg"
                 >
-                  <span className="text-sm font-medium text-dark-700 dark:text-light-200">Node.js</span>
+                  <span className="text-sm font-medium text-dark-700 dark:text-light-200">Docker · Proxmox</span>
                 </motion.div>
 
                 <motion.div
@@ -180,7 +180,7 @@ export default function Home() {
                   transition={{ delay: 1.2 }}
                   className="absolute bottom-20 -left-4 glass px-3 py-2 rounded-lg shadow-lg"
                 >
-                  <span className="text-sm font-medium text-dark-700 dark:text-light-200">SAP ABAP</span>
+                  <span className="text-sm font-medium text-dark-700 dark:text-light-200">Active Directory</span>
                 </motion.div>
               </div>
             </motion.div>
